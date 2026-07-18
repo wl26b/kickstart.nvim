@@ -382,11 +382,10 @@ do
   -- change the command under that to load whatever the name of that colorscheme is.
   --
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-  vim.pack.add { gh 'folke/tokyonight.nvim' }
+  vim.pack.add { gh 'scottmckendry/cyberdream.nvim' }
 
-  -- Load the colorscheme here. The '-night' suffix selects the darkest variant;
-  -- other options include 'tokyonight-storm', 'tokyonight-moon', 'tokyonight-day'.
-  vim.cmd.colorscheme 'tokyonight-night'
+  -- Load the colorscheme here.
+  vim.cmd.colorscheme 'cyberdream'
 
   -- Highlight todo, notes, etc in comments
   vim.pack.add { gh 'folke/todo-comments.nvim' }
