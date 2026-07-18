@@ -383,12 +383,10 @@ do
   --
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
   vim.pack.add { gh 'folke/tokyonight.nvim' }
-  require('tokyonight').setup {
-    style = 'night', -- darkest variant
-  }
 
-  -- Load the colorscheme here.
-  vim.cmd.colorscheme 'tokyonight'
+  -- Load the colorscheme here. The '-night' suffix selects the darkest variant;
+  -- other options include 'tokyonight-storm', 'tokyonight-moon', 'tokyonight-day'.
+  vim.cmd.colorscheme 'tokyonight-night'
 
   -- Highlight todo, notes, etc in comments
   vim.pack.add { gh 'folke/todo-comments.nvim' }
